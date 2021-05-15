@@ -4,7 +4,8 @@ module.exports = {
   // base: '/du/',
   themeConfig: {
     logo: '/assets/img/favicon.ico', // /public/assets/img/favicon.ico
-    sidebar: 'auto',
+    repo: 'duzit/du-vuepress',
+    repoLabel: "Github",
     nav: [
       {
         text: 'JavaScript',
