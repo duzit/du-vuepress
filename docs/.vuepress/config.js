@@ -4,24 +4,42 @@ module.exports = {
   // base: '/du/',
   themeConfig: {
     logo: '/assets/img/favicon.ico', // /public/assets/img/favicon.ico
-    repo: 'duzit/du-vuepress',
+    repo: 'duzit/du-vuepress', // github 地址
     repoLabel: "Github",
     nav: [
       {
-        text: 'JavaScript',
-        link: '/javascript/',
-      },
-      {
-        text: 'Vue',
-        link: '/vue/',
+        text: '我的笔记',
+        items: [
+          {
+            text: 'JavaScript',
+            link: '/note/js/'
+          },
+          {
+            text: 'Vue',
+            link: '/note/vue/'
+          },
+        ]
       },
       {
         text: 'Interview',
-        link: '/interview/',
-      }
+        items: [
+          {
+            text: 'JavaScript',
+            link: '/interview/js/'
+          },
+          {
+            text: 'Vue',
+            link: '/interview/vue/'
+          },
+          {
+            text: 'Webpack',
+            link: '/interview/webpack/'
+          },
+        ]
+      },
     ],
     sidebar: {
-      '/javascript/': [
+      '/interview/js/': [
         '闭包',
         '函数的length属性',
         '箭头函数.普通函数',
@@ -47,7 +65,7 @@ module.exports = {
         'typeof.instanceof',
         'use-strict'
       ],
-      '/vue/': [
+      '/interview/vue/': [
         '单向数据流',
         '通信方式',
         'computed.watch',
@@ -57,6 +75,17 @@ module.exports = {
         'vue',
         'Vue编译模板原理',
         'vuex'
+      ],
+      '/interview/webpack/': [
+        'webpack proxy工作原理',
+        'webpack常见的loader',
+        'webpack常见的plugin',
+        'webpack构建流程',
+        'webpack核心原理',
+        'webpack热更新HMR',
+        'webpack优化前端性能',
+        'webpack中loader和plugin的区别',
+        '提高webpack构建速度的方法'
       ],
       '/': [
         '',        /* / */

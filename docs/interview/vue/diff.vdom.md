@@ -1,4 +1,4 @@
-## diff 
+### diff 
 [链接](https://segmentfault.com/a/1190000008782928)
 * 设置key和不设置key的区别  
   不设key，newCh和oldCh只会进行头尾两端的相互比较，设key后，除了头尾两端的比较外，  
