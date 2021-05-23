@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Vuepress',
+  title: 'adair',
   description: '记录文档',
   // base: '/du/',
   themeConfig: {
@@ -39,6 +39,9 @@ module.exports = {
       },
     ],
     sidebar: {
+      '/note/js/': [
+        ['imgSrc', 'img动态src问题']
+      ],
       '/interview/js/': [
         '闭包',
         '函数的length属性',

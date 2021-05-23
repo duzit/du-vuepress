@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: /hero.png
-heroText: Hey You
+heroText: hey you~
 tagline: Welcome
 # actionText: 快速了解 →
 # actionLink: /javascript/
