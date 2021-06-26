@@ -1,6 +1,10 @@
 module.exports = {
   title: 'adair',
   description: '记录文档',
+  markdown: {
+    // extractHeaders: [ 'h3' ],
+    lineNumbers: true
+  },
   // base: '/du/',
   themeConfig: {
     logo: '/assets/img/favicon.ico', // /public/assets/img/favicon.ico
@@ -66,7 +70,8 @@ module.exports = {
         'this指向',
         'token.登录认证',
         'typeof.instanceof',
-        'use-strict'
+        'use-strict',
+        ['CommonJS-ESModule', 'CommonJs和ES Module的区别']
       ],
       '/interview/vue/': [
         '单向数据流',
@@ -77,7 +82,8 @@ module.exports = {
         ['keep-alive', 'keepalive'],
         'vue',
         'Vue编译模板原理',
-        'vuex'
+        'vuex',
+        '对不同构建版本的解释'
       ],
       '/interview/webpack/': [
         'webpack proxy工作原理',
