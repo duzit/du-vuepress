@@ -22,6 +22,10 @@ module.exports = {
             text: 'Vue',
             link: '/note/vue/'
           },
+          {
+            text: 'Echarts',
+            link: '/note/echarts/'
+          }
         ]
       },
       {
