@@ -79,7 +79,8 @@ module.exports = {
         'token.登录认证',
         'typeof.instanceof',
         'use-strict',
-        ['CommonJS-ESModule', 'CommonJs和ES Module的区别']
+        ['CommonJS-ESModule', 'CommonJs和ES Module的区别'],
+        '几种继承的方法'
       ],
       '/interview/vue/': [
         '单向数据流',
