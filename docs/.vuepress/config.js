@@ -50,6 +50,10 @@ module.exports = {
       '/note/js/': [
         ['imgSrc', 'img动态src问题']
       ],
+      '/note/echarts/': [
+        ['summary', '常见配置总结'],
+        ['troubleshoot', 'Troubleshoot'],
+      ],
       '/interview/js/': [
         '闭包',
         '函数的length属性',
