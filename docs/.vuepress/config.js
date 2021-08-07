@@ -45,6 +45,10 @@ module.exports = {
           },
         ]
       },
+      {
+        text: 'Vue2源码',
+        link: '/vueSource/'
+      }
     ],
     sidebar: {
       '/note/js/': [
@@ -104,6 +108,13 @@ module.exports = {
         'webpack优化前端性能',
         'webpack中loader和plugin的区别',
         '提高webpack构建速度的方法'
+      ],
+      '/vueSource/': [
+        ['01.文件结构', '文件结构'],
+        ['02.对不同构建版本的解释', '对不同构建版本的解释'],
+      ],
+      '/note/vue/': [
+        ['选项.DOM', '选项/DOM']
       ],
       '/': [
         '',        /* / */
