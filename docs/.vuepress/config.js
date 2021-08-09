@@ -112,6 +112,11 @@ module.exports = {
       '/vueSource/': [
         ['01.文件结构', '文件结构'],
         ['02.对不同构建版本的解释', '对不同构建版本的解释'],
+        ['03.从入口开始', '从入口开始'],
+        ['04.new Vue发生了什么', 'new Vue发生了什么'],
+        ['05.Vue 实例挂载的实现', 'Vue 实例挂载的实现'],
+        ['06.render', 'render'],
+        ['07.Virtual.DOM', 'Virtual DOM'],
       ],
       '/note/vue/': [
         ['选项.DOM', '选项/DOM']
