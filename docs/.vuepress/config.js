@@ -48,6 +48,10 @@ module.exports = {
       {
         text: 'Vue2源码',
         link: '/vueSource/'
+      },
+      {
+        text: 'ES6',
+        link: '/es6/'
       }
     ],
     sidebar: {
@@ -120,6 +124,9 @@ module.exports = {
       ],
       '/note/vue/': [
         ['选项.DOM', '选项/DOM']
+      ],
+      '/note/es6/': [
+        ['class', 'Class']
       ],
       '/': [
         '',        /* / */
