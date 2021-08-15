@@ -308,3 +308,119 @@ const point = new Point(100, 200);
 const { getThis, getString } = point;
 console.log(getThis().getString()); // x: 100; y: 200
 ```
+
+## 静态方法
+
+- 类相当于实例的原型，所有定义在类上的方法都会被实例继承。如果在某个方法前面加上 `static` ，则表示该方法不会被实例继承，  
+  而是直接通过类调用。
+
+```js
+class Bar {
+  static getName() {
+    // ...
+  }
+}
+
+const bar = new Bar();
+bar.getName() // Error
+```
+
+- 如果静态方法包含 `this` ，则 `this` 指的是类，而不是实例。
+
+```js
+class Bar {
+  static getName() {
+    this.queryName();
+  }
+
+  // 类调用的方法
+  static queryName() {
+    console.log('hello');
+  }
+
+  // 实例调用的方法
+  queryName() {
+    console.log('world');
+  }
+}
+
+Bar.getName() // 'hello'
+```
+
+- 父类的静态方法，可以被子类继承
+
+```js
+class Bar {
+  static getName() {
+    // ...
+  }
+}
+
+class Foo extends Bar {
+
+}
+Foo.getName();
+```
+
+## 实例属性的新写法
+
+- 实例属性除了可以定义在 constructor 的 this 上，也可以定义在类的最顶层。
+
+```js
+class Foo {
+  bar = 'hello';
+  baz = 'world';
+
+  constructor() {
+    // ...
+  }
+}
+```
+
+## 静态属性 
+
+- 是指 Class 本身的属性，而不是定义在 this 上的
+
+```js
+class Boo {
+  static num = 1;
+
+}
+
+Boo.count = 12
+
+console.log(Boo.num); // 1
+console.log(Boo.count); // 12
+```
+
+## 私有属性和私有方法
+
+- 只能在类内部使用 
+
+```js
+class Boo {
+  #age = 0;
+
+  up () {
+    this.#age++;
+    console.log(this.#age);
+  }
+
+  get age() {
+    return this.#age;
+  }
+
+  set age(value) {
+    this.#age = value;
+  }
+}
+
+const boo = new Boo();
+boo.up(); // 1
+boo.up(); // 2
+// boo.#age; // Error
+
+console.log(boo.age); // 2
+boo.age = 10;
+console.log(boo.age); // 10
+```
