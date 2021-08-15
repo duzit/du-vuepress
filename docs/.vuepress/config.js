@@ -125,7 +125,7 @@ module.exports = {
       '/note/vue/': [
         ['选项.DOM', '选项/DOM']
       ],
-      '/note/es6/': [
+      '/es6/': [
         ['class', 'Class']
       ],
       '/': [
