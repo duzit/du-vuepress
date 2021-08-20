@@ -121,6 +121,8 @@ module.exports = {
         ['05.Vue 实例挂载的实现', 'Vue 实例挂载的实现'],
         ['06.render', 'render'],
         ['07.Virtual.DOM', 'Virtual DOM'],
+        ['08.createElement', 'createElement'],
+        ['09.update', 'update'],
       ],
       '/note/vue/': [
         ['选项.DOM', '选项/DOM']
