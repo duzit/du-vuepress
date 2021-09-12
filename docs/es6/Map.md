@@ -120,5 +120,18 @@ m6.forEach(function (value, key, map) { // 这里不能使用箭头函数
 
 # WeakMap
 
+## 简介
+
 - 只接收对象（null除外）作为键名
 - WeakMap 键名指向的对象 不计入垃圾回收机制
+
+- 没有遍历操作，没有 size 属性
+- 无法清空 不支持 clear 方法
+- 可用方法 `get()` `set()` `has()` `delete`
+
+## 用途
+
+- DOM 节点作为键名
+
+- 部署私有属性
+
