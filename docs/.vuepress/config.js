@@ -123,12 +123,17 @@ module.exports = {
         ['07.Virtual.DOM', 'Virtual DOM'],
         ['08.createElement', 'createElement'],
         ['09.update', 'update'],
+        ['10.响应式对象', '响应式对象'],
       ],
       '/note/vue/': [
         ['选项.DOM', '选项/DOM']
       ],
       '/es6/': [
-        ['class', 'Class']
+        ['class', 'Class'],
+        'Map',
+        'Set',
+        'Symbol',
+        '数组的扩展'
       ],
       '/': [
         '',        /* / */
