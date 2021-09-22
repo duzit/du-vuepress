@@ -56,7 +56,9 @@ module.exports = {
     ],
     sidebar: {
       '/note/js/': [
-        ['imgSrc', 'img动态src问题']
+        ['imgSrc', 'img动态src问题'],
+        ['node-sass安装', 'node-sass安装问题'],
+        ['window.open', '打开新窗口 监听其关闭 然后刷新当前页面']
       ],
       '/note/echarts/': [
         ['summary', '常见配置总结'],
@@ -133,6 +135,7 @@ module.exports = {
         'Map',
         'Set',
         'Symbol',
+        'Reflect',
         '数组的扩展'
       ],
       '/': [
