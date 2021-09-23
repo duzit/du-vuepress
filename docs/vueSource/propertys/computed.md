@@ -1,6 +1,8 @@
 # Computed 
 
 ```js
+const computedWatcherOptions = { lazy: true }
+
 function initComputed (vm: Component, computed: Object) {
   // $flow-disable-line
   const watchers = vm._computedWatchers = Object.create(null)
@@ -9,6 +11,7 @@ function initComputed (vm: Component, computed: Object) {
 
   for (const key in computed) {
     const userDef = computed[key]
+    // 获取 userDef 
     const getter = typeof userDef === 'function' ? userDef : userDef.get
     if (process.env.NODE_ENV !== 'production' && getter == null) {
       warn(
@@ -74,9 +77,43 @@ export function defineComputed (
   }
   Object.defineProperty(target, key, sharedPropertyDefinition)
 }
+
+// 返回 computedGetter 即计算属性对应的 getter
+function createComputedGetter (key) {
+  return function computedGetter () {
+    const watcher = this._computedWatchers && this._computedWatchers[key]
+    if (watcher) {
+      // watcher 中的 dirty === lazy
+      // computed 中 options 默认 lazy = true
+      if (watcher.dirty) {
+        // This only gets called for lazy watchers
+        // computed is lazy watchers
+        watcher.evaluate()
+      }
+      if (Dep.target) {
+        watcher.depend()
+      }
+
+      // this.value = this.lazy
+      //   ? undefined
+      //   : this.get()
+      return watcher.value
+    }
+  }
+}
 ```
 
-- computed 的参数
+## 初始化流程
+
+- 遍历 `computed` 属性，获取 `getter` （区分属性定义方式 function 或 object）
+
+- 非 `isSSR` ，为每一个 `getter` 创建一个 `watcher` （lazy: true）
+
+- 判断 `computed` 的属性是否已经定义在 `data props methods` ，调用 `defineComputed(vm, key, userDef)`
+
+- `defineComputed` 中调用 `Object.defineProperty(target, key, sharedPropertyDefinition)` 给计算属性的 `key` 值添加 `getter` 和 `setter`
+
+## computed 属性的参数
 
 ```js
 computed: {
