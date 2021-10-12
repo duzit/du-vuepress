@@ -52,13 +52,31 @@ module.exports = {
       {
         text: 'ES6',
         link: '/es6/'
+      },
+      {
+        text: '源码相关',
+        items: [
+          {
+            text: 'axios',
+            link: '/source/axios/'
+          },
+          {
+            text: 'vuerouter',
+            link: '/source/vuerouter/'
+          },
+          {
+            text: 'vuex',
+            link: '/source/vuex/'
+          }
+        ]
       }
     ],
     sidebar: {
       '/note/js/': [
         ['imgSrc', 'img动态src问题'],
         ['node-sass安装', 'node-sass安装问题'],
-        ['window.open', '打开新窗口 监听其关闭 然后刷新当前页面']
+        ['window.open', '打开新窗口 监听其关闭 然后刷新当前页面'],
+        'Promise链式调用'
       ],
       '/note/echarts/': [
         ['summary', '常见配置总结'],
@@ -90,7 +108,8 @@ module.exports = {
         'typeof.instanceof',
         'use-strict',
         ['CommonJS-ESModule', 'CommonJs和ES Module的区别'],
-        '几种继承的方法'
+        '几种继承的方法',
+        'Map和Object区别'
       ],
       '/interview/vue/': [
         '单向数据流',
