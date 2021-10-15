@@ -277,6 +277,7 @@ module.exports = function dispatchRequest(config) {
   config.headers = config.headers || {};
 
   // Transform request data
+  // 转换请求数据
   config.data = transformData.call(
     config,
     config.data,
@@ -331,3 +332,107 @@ module.exports = function dispatchRequest(config) {
   });
 };
 ```
+
+## 转换 请求 响应数据
+
+```js
+transformRequest: [function transformRequest(data, headers) {
+  normalizeHeaderName(headers, 'Accept');
+  normalizeHeaderName(headers, 'Content-Type');
+
+  // 判断 data 类型 
+  if (utils.isFormData(data) ||
+    utils.isArrayBuffer(data) ||
+    utils.isBuffer(data) ||
+    utils.isStream(data) ||
+    utils.isFile(data) ||
+    utils.isBlob(data)
+  ) {
+    return data;
+  }
+  if (utils.isArrayBufferView(data)) {
+    return data.buffer;
+  }
+  if (utils.isURLSearchParams(data)) {
+    setContentTypeIfUnset(headers, 'application/x-www-form-urlencoded;charset=utf-8');
+    return data.toString();
+  }
+
+  // 设置 Content-Type 类型
+  if (utils.isObject(data) || (headers && headers['Content-Type'] === 'application/json')) {
+    setContentTypeIfUnset(headers, 'application/json');
+    // 将 data 转为 json 字符串返回
+    return stringifySafely(data);
+  }
+  return data;
+}],
+
+transformResponse: [function transformResponse(data) {
+  var transitional = this.transitional || defaults.transitional;
+  var silentJSONParsing = transitional && transitional.silentJSONParsing;
+  var forcedJSONParsing = transitional && transitional.forcedJSONParsing;
+  var strictJSONParsing = !silentJSONParsing && this.responseType === 'json';
+
+  if (strictJSONParsing || (forcedJSONParsing && utils.isString(data) && data.length)) {
+    try {
+      // 将 data 转为 JSON 对象返回
+      return JSON.parse(data);
+    } catch (e) {
+      if (strictJSONParsing) {
+        if (e.name === 'SyntaxError') {
+          throw enhanceError(e, this, 'E_JSON_PARSE');
+        }
+        throw e;
+      }
+    }
+  }
+
+  return data;
+}],
+```
+
+
+## 适配器 adapter 
+
+- 支持 浏览器和Node环境
+
+```js
+// lib/core/dispatchRequest.js
+var adapter = config.adapter || defaults.adapter;
+
+// lib/defaults.js
+adapter: getDefaultAdapter()
+
+function getDefaultAdapter() {
+  var adapter;
+  if (typeof XMLHttpRequest !== 'undefined') {
+    // For browsers use XHR adapter
+    adapter = require('./adapters/xhr');
+  } else if (typeof process !== 'undefined' && Object.prototype.toString.call(process) === '[object process]') {
+    // For node use HTTP adapter
+    adapter = require('./adapters/http');
+  }
+  return adapter;
+}
+```
+
+```js
+// lib/adapters/xhr.js
+module.exports = function xhrAdapter(config) {
+  return new Promise(function dispatchXhrRequest(resolve, reject) {
+    // ...
+    var request = new XMLHttpRequest();
+    // 设置完整请求路径
+    var fullPath = buildFullPath(config.baseURL, config.url);
+    request.open(config.method.toUpperCase(), buildURL(fullPath, config.params, config.paramsSerializer), true) ;
+    // 请求超时
+    request.timeout = config.timeout;
+    request.ontimeout = function handleTimeout() {...}
+    // 请求中断
+    request.onabort = function handleAbort() {...}
+    // ...
+    request.send(requestData);
+  }
+}
+```
+
