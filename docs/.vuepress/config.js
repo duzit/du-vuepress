@@ -76,7 +76,8 @@ module.exports = {
         ['imgSrc', 'img动态src问题'],
         ['node-sass安装', 'node-sass安装问题'],
         ['window.open', '打开新窗口 监听其关闭 然后刷新当前页面'],
-        'Promise链式调用'
+        'Promise链式调用',
+        ['JSON.stringify', 'JSON.stringify()']
       ],
       '/note/echarts/': [
         ['summary', '常见配置总结'],
