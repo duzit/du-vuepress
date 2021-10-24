@@ -1,4 +1,4 @@
 git add .
-git commit -m 'add source axios; update interview'
+git commit -m 'add source vuex'
 git pull 
 git push 
