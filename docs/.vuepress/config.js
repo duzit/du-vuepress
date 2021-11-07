@@ -159,6 +159,15 @@ module.exports = {
         'Reflect',
         '数组的扩展'
       ],
+      '/source/axios/': [
+        ['axios', 'Axios']
+      ],
+      '/source/vuerouter/': [
+        'Router'
+      ],
+      '/source/vuex/': [
+        'Vuex'
+      ],
       '/': [
         '',        /* / */
       ]

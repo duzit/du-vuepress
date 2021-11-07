@@ -1,4 +1,4 @@
 git add .
-git commit -m 'add vuex xmind'
+git commit -m 'update axios router '
 git pull 
 git push 
