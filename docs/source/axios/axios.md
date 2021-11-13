@@ -6,6 +6,8 @@
 
 - [github](https://github.com/axios/axios)
 
+- [axios核心思想参考](https://mp.weixin.qq.com/s/aQSrjClavo2Yiukcauw8SQ)
+
 ## 简介
 
 - axios 是一个基于 Promise 网络请求库，作用于 NodeJS 和 浏览器中。  

@@ -77,7 +77,8 @@ module.exports = {
         ['node-sass安装', 'node-sass安装问题'],
         ['window.open', '打开新窗口 监听其关闭 然后刷新当前页面'],
         'Promise链式调用',
-        ['JSON.stringify', 'JSON.stringify()']
+        ['JSON.stringify', 'JSON.stringify()'],
+        ['CommonJS.ESM', 'CommonJS Vs ES Module']
       ],
       '/note/echarts/': [
         ['summary', '常见配置总结'],
@@ -122,7 +123,11 @@ module.exports = {
         'vue',
         'Vue编译模板原理',
         'vuex',
-        '对不同构建版本的解释'
+        '对不同构建版本的解释',
+        'MVVM理解',
+        'new Vue 做了什么',
+        'SPA的理解',
+        'Vue优缺点'
       ],
       '/interview/webpack/': [
         'webpack proxy工作原理',

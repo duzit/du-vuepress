@@ -1,10 +1,14 @@
-# new Vue 发生了什么
+# new Vue 做了什么
 
-## 通过 new 实例化 Vue 
+## 源码
 
-- /src/core/instance/index.js
+- src/core/instance/index.js
+
+- Vue 是一个 `function` 类，主要是执行了 `_init` 方法， 该方法定义在 `initMixin(Vue)`
+
 
 ```js
+// 
 function Vue (options) {
   if (process.env.NODE_ENV !== 'production' &&
     !(this instanceof Vue)
@@ -13,16 +17,20 @@ function Vue (options) {
   }
   this._init(options)
 }
+
+initMixin(Vue)
+stateMixin(Vue)
+eventsMixin(Vue)
+lifecycleMixin(Vue)
+renderMixin(Vue)
+
+export default Vue
 ```
 
-## this._init() 
-
-- /src/core/instance/init.js
-- 合并配置，初始化生命周期，初始化事件中心，初始化渲染，初始化 data、props、computed、watcher 等。
-- vm.$options = options
-- vm.$mount 挂载 vm 
+- initMixin
 
 ```js
+// src/core/instance/init.js
 export function initMixin (Vue: Class<Component>) {
   Vue.prototype._init = function (options?: Object) {
     const vm: Component = this
@@ -96,7 +104,7 @@ export function initMixin (Vue: Class<Component>) {
       mark(endTag)
       measure(`vue ${vm._name} init`, startTag, endTag)
     }
-
+    
     // 如果有 el 默认执行 $mount 挂载
     if (vm.$options.el) {
       vm.$mount(vm.$options.el)
@@ -104,4 +112,3 @@ export function initMixin (Vue: Class<Component>) {
   }
 }
 ```
-
