@@ -79,6 +79,7 @@ module.exports = {
         'Promise链式调用',
         ['JSON.stringify', 'JSON.stringify()'],
         ['CommonJS.ESM', 'CommonJS Vs ES Module']
+        'Object'
       ],
       '/note/echarts/': [
         ['summary', '常见配置总结'],
@@ -127,7 +128,17 @@ module.exports = {
         'MVVM理解',
         'new Vue 做了什么',
         'SPA的理解',
-        'Vue优缺点'
+        'Vue优缺点',
+        '父组件和子组件生命周期执行顺序',
+        '父组件如何监听子组件生命周期的钩子函数',
+        'vif-vshow区别',
+        'vif不能和vfor一起使用',
+        'Vue.$set如何解决对象新增属性的响应问题',
+        'Vue单页面提速',
+        'Vue响应式原理',
+        'Vue性能优化及原理',
+        'Vue异步更新机制',
+
       ],
       '/interview/webpack/': [
         'webpack proxy工作原理',
