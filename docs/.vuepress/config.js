@@ -78,8 +78,8 @@ module.exports = {
         ['window.open', '打开新窗口 监听其关闭 然后刷新当前页面'],
         'Promise链式调用',
         ['JSON.stringify', 'JSON.stringify()'],
-        ['CommonJS.ESM', 'CommonJS Vs ES Module']
-        'Object'
+        ['CommonJS.ESM', 'CommonJS Vs ES Module'],
+        ['Object', 'Object属性']
       ],
       '/note/echarts/': [
         ['summary', '常见配置总结'],
