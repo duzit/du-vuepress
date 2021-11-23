@@ -1,1 +1,5 @@
-### webpack 
+# webpack 
+
+- [配置](https://mp.weixin.qq.com/s/Po30990JBKFWW9bwLoURjA)
+
+- [一文彻底解决新手对webpack的恐惧](https://mp.weixin.qq.com/s/C5Tu3E8DgcXUGg4Hz53wBA)

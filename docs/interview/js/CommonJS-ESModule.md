@@ -1,9 +1,16 @@
-## CommonJs - ES module
+# CommonJs - ES module
 
 - [参考](https://mp.weixin.qq.com/s/mbEb2fCCqVEXJCtX_5_8bg)
 
 ## CommonJs 
-- 定义模块，提供通用的模块组织方式。
+
+### 背景 
+- ES6之前，ECMAScript 没有提供代码组织的方式，那时候通常使用 `IIFE` 来实现模块化，  
+  随着 JavaScript 的发展，原本浏览器端的模块规范不利于大规模利用，于是便有了 CommonJS 规范
+
+### 作用
+
+- 为了定义模块，提供通用的模块组织方式。
 
 ### 模块定义和使用 
 - 一个文件就是一个模块，导出通过 exports 或者 module.exports 挂载。
