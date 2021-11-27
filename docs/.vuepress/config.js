@@ -142,10 +142,10 @@ module.exports = {
       ],
       '/interview/webpack/': [
         '对webpack的理解',
+        'webpack构建流程',
         'webpack proxy工作原理',
         'webpack常见的loader',
         'webpack常见的plugin',
-        'webpack构建流程',
         'webpack核心原理',
         'webpack热更新HMR',
         'webpack优化前端性能',

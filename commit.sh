@@ -1,4 +1,4 @@
 git add .
-git commit -m 'update config.js '
+git commit -m 'update webpack '
 git pull 
 git push 
