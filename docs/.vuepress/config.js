@@ -143,14 +143,15 @@ module.exports = {
       '/interview/webpack/': [
         '对webpack的理解',
         'webpack构建流程',
-        'webpack proxy工作原理',
         'webpack常见的loader',
         'webpack常见的plugin',
+        'webpack中loader和plugin的区别',
+        'webpack proxy工作原理',
         'webpack核心原理',
         'webpack热更新HMR',
         'webpack优化前端性能',
-        'webpack中loader和plugin的区别',
-        '提高webpack构建速度的方法'
+        '提高webpack构建速度的方法',
+        'runtime.manifest'
       ],
       '/vueSource/': [
         ['01.文件结构', '文件结构'],
