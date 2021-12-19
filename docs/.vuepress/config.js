@@ -19,6 +19,10 @@ module.exports = {
             link: '/note/js/'
           },
           {
+            text: 'TypeScript',
+            link: '/note/ts/'
+          },
+          {
             text: 'Vue',
             link: '/note/vue/'
           },
@@ -80,6 +84,9 @@ module.exports = {
         ['JSON.stringify', 'JSON.stringify()'],
         ['CommonJS.ESM', 'CommonJS Vs ES Module'],
         ['Object', 'Object属性']
+      ],
+      '/note/js/': [
+
       ],
       '/note/echarts/': [
         ['summary', '常见配置总结'],
