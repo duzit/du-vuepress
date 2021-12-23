@@ -174,7 +174,15 @@ module.exports = {
       ],
       '/note/vue/': [
         ['选项.DOM', '选项/DOM'],
-        '函数式组件'
+        '函数式组件',
+        'Vue路由组件传参',
+        {
+          title: 'Composition API',
+          collapsable: false,
+          children: [
+            ['/note/vue/capi/setup', 'setup']
+          ]
+        }
       ],
       '/es6/': [
         ['class', 'Class'],
