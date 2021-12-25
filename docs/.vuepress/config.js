@@ -12,7 +12,7 @@ module.exports = {
     repoLabel: "Github",
     nav: [
       {
-        text: '我的笔记',
+        text: 'Notes',
         items: [
           {
             text: 'JavaScript',
@@ -180,7 +180,8 @@ module.exports = {
           title: 'Composition API',
           collapsable: false,
           children: [
-            ['/note/vue/capi/setup', 'setup']
+            ['/note/vue/capi/setup', 'Setup']
+            ['/note/vue/capi/refs', 'Refs']
           ]
         }
       ],
