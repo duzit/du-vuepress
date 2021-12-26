@@ -24,7 +24,7 @@ setup(props) {
 ```
 
 
-```js
+```vue
 <template>
   <div>
     <h1>Setup</h1>

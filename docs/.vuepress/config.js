@@ -180,8 +180,10 @@ module.exports = {
           title: 'Composition API',
           collapsable: false,
           children: [
-            ['/note/vue/capi/setup', 'Setup']
-            ['/note/vue/capi/refs', 'Refs']
+            ['/note/vue/capi/setup', 'Setup'],
+            ['/note/vue/capi/refs', 'Refs'],
+            ['/note/vue/capi/computed', 'Computed'],
+            ['/note/vue/capi/watch', 'Watch']
           ]
         }
       ],

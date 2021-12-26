@@ -1,7 +1,7 @@
 # [refs](https://v3.cn.vuejs.org/api/refs-api.html) 
 
 
-```js
+```vue
 <template>
   <div>
     <h1>ref</h1>
