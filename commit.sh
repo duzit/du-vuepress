@@ -1,4 +1,4 @@
 git add .
-git commit -m 'add computed watch '
+git commit -m 'add watchEffect '
 git pull 
 git push 
