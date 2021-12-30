@@ -1,9 +1,14 @@
-### 为什么JavaScript是单线程
+# EventLoop
+
+- [如何理解单线程的JavaScript及其工作原理](https://mp.weixin.qq.com/s/omqXH1SxJyvl7N8y-6Zp3Q)
+
+## 为什么JavaScript是单线程
+
 * [参考链接](https://mp.weixin.qq.com/s/9iN7XR1PwXfua8SrabOi5w)
 * 作为浏览器脚本语言，JavaScript 的主要用途是与用户互动，以及操作DOM。  
   这决定了它只能是单线程，否则会带来很复杂的同步问题。比如，如果是多线程，一个线程添加DOM，另一个删除DOM，  
   浏览器将不知如何处理
-### 任务队列 同步任务和异步任务
+## 任务队列 同步任务和异步任务
 * 同步任务，在主线程上排队执行的任务，只有前一个任务执行完毕，才执行下一个任务。
 * 异步任务，不进入主线程，而进入任务队列的任务，只有任务队列通知主线程，某个任务可以执行了，  
   该任务才进入主线程执行。
@@ -12,14 +17,14 @@
   可以进入执行栈了。主线程读取任务队列，就是读取里面有哪些事件。异步任务必须指定回调函数，当主线程开始  
   执行异步任务，其实就是执行对应的回调函数。
 
-### 异步任务分为宏任务和微任务
-#### 微任务
+## 异步任务分为宏任务和微任务
+### 微任务
 * 一个需要异步执行的函数，执行时机在主函数执行结束之后，当前宏任务结束之前。常见的微任务：
 1. Promise().then()
 2. MutaionObserver 
 3. process.nextTick（Node.js）
 
-#### 宏任务
+### 宏任务
 1. script
 2. setTimeout/setInterval
 
@@ -62,8 +67,8 @@ console.log('normal');
 // setTimeout
 ```
 
-### await async
-#### async 
+## await async
+### async 
 * 返回一个Promise对象
 ```js
 function f() {
@@ -76,7 +81,7 @@ async function asyncF() {
 }
 ```
 
-#### await
+### await
 * 正常情况 await后面是一个Promise对象，返回该对象的结果，如果不是Promise对象，则返回对应值
 ```js
 async function af() {
