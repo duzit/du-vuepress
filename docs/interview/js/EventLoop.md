@@ -31,9 +31,9 @@
 
 - 负责执行代码，收集和处理事件，以及执行任务队列中的子任务
 
-![](../assets/el.png)
+![1](../assets/el.png)
 
-![](../assets/el2.png)
+![2](../assets/el2.png)
 
 - Javascript 有一个主线程和执行栈，所有的任务都会被放到调用栈等待主线程执行
 
