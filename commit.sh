@@ -1,4 +1,4 @@
 git add .
-git commit -m 'add interview js Promise'
+git commit -m 'add interview js debounce throllte'
 git pull 
 git push 
