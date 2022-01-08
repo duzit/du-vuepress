@@ -1,4 +1,4 @@
 git add .
-git commit -m 'add interview js debounce throllte'
+git commit -m 'update interview js eventloop'
 git pull 
 git push 

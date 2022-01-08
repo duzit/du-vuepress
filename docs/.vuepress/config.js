@@ -123,7 +123,8 @@ module.exports = {
         'use-strict',
         ['CommonJS-ESModule', 'CommonJs和ES Module的区别'],
         '几种继承的方法',
-        'Map和Object区别'
+        'Map和Object区别',
+        'Promise'
       ],
       '/interview/vue/': [
         '单向数据流',
