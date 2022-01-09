@@ -105,7 +105,7 @@ module.exports = {
         '内存泄漏的几种情况',
         '事件冒泡',
         '响应式布局',
-        '原型(链)',
+        'prototype',
         'apply.call.bind',
         'array.string',
         'babel',

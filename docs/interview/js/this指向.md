@@ -1,4 +1,4 @@
-### this 指向
+# this 指向
 
 * 函数被调用时（即运行时）才会确定该函数内this的指向。因为在函数中this与arguments是两个特殊的变量，  
   在函数被调用时才会取得它们，而且搜索这两个变量时只会在活动对象范围里面去搜
@@ -93,5 +93,8 @@ obj.test() // 1
 ```
 ----
 
-### 参考
-1. https://mp.weixin.qq.com/s/_qwvmw34Hm6AZxJuIgHY6Q
+## 参考
+
+- [说说你对Javascript中this对象的理解](https://mp.weixin.qq.com/s/_qwvmw34Hm6AZxJuIgHY6Q)
+
+- [掘金](https://juejin.cn/post/6844903496253177863)

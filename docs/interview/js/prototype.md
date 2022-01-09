@@ -1,7 +1,9 @@
-### 原型(链)
-----
-[链接](https://juejin.im/post/5c72a1766fb9a049ea3993e6)
-### 实例 
+# 原型(链)
+
+- [参考](https://juejin.im/post/5c72a1766fb9a049ea3993e6)
+
+## 实例 
+
 ```js
 var A = function() {};
 A.prototype.n = 1;
@@ -97,18 +99,22 @@ Object.__proto__ === Function.prototype;
 Function.prototype.__proto__ === Object.prototype;
 Object.prototype.__proto__ === null;
 ```
-### new 缺点
+## new 缺点
+
 * 无法共享属性和方法
-### prototype 
+## prototype 
+
 * 数据共享，避免资源浪费
-### 原型链
+## 原型链
+
 * 通过两种创建原型的方式（ Object.create() 或 DOG.prototype ）生成一个 __proto__   
   指针来实现
 * 作用  
   > 访问 优先在对象本身查找，没有则顺着原型链向上查找  
   > 修改 只能修改跟删除自身属性，不会影响到原型链上的其他对象。
 
-### 说明
+## 说明
+
 * JavaScript只有一种结构：对象。  
   每个实例对象都有一个私有属性（__proto__）指向它的构造函数的原型对象（prototype），  
   该原型对象也有一个自己的原型对象（__proto__），层层向上直到一个对象的原型对象为null，  
@@ -117,3 +123,5 @@ Object.prototype.__proto__ === null;
 * JavaScript有一个指向一个原型对象的链，当试图访问对象的属性时，它不仅仅在该对象上搜寻，  
   还会搜寻该对象的原型，以及该对象的原型的原型，一次层层向上搜索，直到找到一个名字匹配的  
   属性或到达原型链的末尾。
+
+![prototype](../assets/prototype.png)
