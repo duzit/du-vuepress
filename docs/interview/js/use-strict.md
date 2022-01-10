@@ -1,4 +1,4 @@
-### use strict 严格模式
+# use strict 严格模式
 
 1. 消除代码的不安全之处，保证代码运行的安全
 2. 提高编译器效率
@@ -22,7 +22,8 @@ function myFunction() {
 }
 ```
 
-### Javascript 严格模式
+## Javascript 严格模式
+
 * 消除 JavaScript 语法的一些不合理、不严谨之处
 * 消除代码运行的不安全之处，保证代码运行的安全
 * 提高编译器效率，增加运行速度
