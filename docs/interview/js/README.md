@@ -10,6 +10,8 @@
 
 - [ES6 Promise 实战练习题](https://mp.weixin.qq.com/s/FTp0o2a8DMINI6J-XNaQ5g)
 
+- [ES6面试、复习干货知识点汇总](https://mp.weixin.qq.com/s/6y0x6SpsRG74eVfCfr2NtQ)
+
 ## 记录
 
 - [EventLoop](./EventLoop)

@@ -1,4 +1,4 @@
 git add .
-git commit -m 'update interview js apply call bind'
+git commit -m 'update interview http url dns'
 git pull 
 git push 
