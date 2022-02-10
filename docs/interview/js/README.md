@@ -12,6 +12,8 @@
 
 - [ES6面试、复习干货知识点汇总](https://mp.weixin.qq.com/s/6y0x6SpsRG74eVfCfr2NtQ)
 
+- [原生JS灵魂拷问](https://mp.weixin.qq.com/s/1NYjPpjXo3L29wygvm-odg)
+
 ## 记录
 
 - [EventLoop](./EventLoop)

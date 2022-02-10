@@ -50,6 +50,10 @@ module.exports = {
           {
             text: 'Http',
             link: '/interview/https/'
+          },
+          {
+            text: 'CSS',
+            link: '/interview/css/'
           }
         ]
       },
@@ -170,8 +174,12 @@ module.exports = {
         ['http.https', 'http VS https'],
         ['request.header', '常见请求头'],
         ['urlEnter', '输入 URL 敲下回车后发生了什么'],
+        'dns',
         'CDN',
         ['GetPost', 'Get Vs Post']
+      ],
+      '/interview/css/': [
+        'transition'
       ],
       '/vueSource/': [
         ['01.文件结构', '文件结构'],
