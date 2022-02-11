@@ -179,7 +179,9 @@ module.exports = {
         ['GetPost', 'Get Vs Post']
       ],
       '/interview/css/': [
-        'transition'
+        'transition',
+        'displaynone.visibilityhidden',
+        'fakeclass'
       ],
       '/vueSource/': [
         ['01.文件结构', '文件结构'],
