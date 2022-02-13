@@ -181,7 +181,11 @@ module.exports = {
       '/interview/css/': [
         'transition',
         'displaynone.visibilityhidden',
-        'fakeclass'
+        'fakeclass',
+        'link.@import',
+        'absolute.float',
+        'box-sizing',
+        'float'
       ],
       '/vueSource/': [
         ['01.文件结构', '文件结构'],

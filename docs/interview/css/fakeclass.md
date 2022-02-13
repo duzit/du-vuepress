@@ -107,3 +107,39 @@ div.box3
   //- 黑色 30px
   p 33
 ```
+
+```html
+<div class="not-main">
+  <p>not 伪类 无class </p>
+  <p class="not-p">not 伪类 有class </p>
+  <div>not 伪类 div </div>
+</div>
+<div class="not-main-2">
+  <span>1111</span>
+  <span>2222</span>
+  <span>3333</span>
+</div>
+```
+```css
+/* 设置非div元素样式 */
+.not-main p:not(div) {
+  font-size: 24px;
+  color: #000;
+}
+/* 非 class 为 not-p 的元素 */
+.not-main p:not(.not-p) {
+  font-size: 18px;
+  color: bisque;
+}
+/* 排除多个class 逗号分隔 */
+.not-main p:not(.not-p,.not-span) {
+  font-size: 18px;
+  color: bisque;
+}
+
+/* 非第一个和最后一个元素 不可写为 span:not(:first-child, :last-child) */
+.not-main-2 span:not(:first-child):not(:last-child) {
+  color: chocolate;
+  font-size: 20px;
+}
+```
