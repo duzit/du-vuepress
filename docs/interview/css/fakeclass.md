@@ -143,3 +143,56 @@ div.box3
   font-size: 20px;
 }
 ```
+
+## CSS3 新增伪类 
+
+- p:first-of-type 
+
+- p:last-of-type
+
+- p:only-of-type 容器里 只有一个 li 元素 不关注是否存在其他元素 有多个 li 元素则不生效
+
+```pug 
+//- 有多个 p 则不生效
+.box1
+  //- p 111
+  span 222
+  p 333
+```
+
+```css
+.box1 {
+  p:only-of-type {
+    color: red;
+  }
+}
+```
+
+- p:only-child 有且只有一个 p 元素 不包含其他元素 才生效
+
+```pug
+//- 有个元素不生效
+.box2
+  p 444
+  //- span 555
+```
+```css
+.box2 {
+  p:only-child {
+    color: blue;
+  }
+}
+```
+
+
+- p:nth-child(2)
+
+- :disabled 
+
+- :enabled 
+
+<button class="btn-disabled" disabled>按钮</button>
+<button class="btn-enabled">按钮2</button>
+
+- checked
+
