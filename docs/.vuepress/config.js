@@ -185,7 +185,10 @@ module.exports = {
         'link.@import',
         'absolute.float',
         'box-sizing',
-        'float'
+        'float',
+        'selector',
+        'BFC',
+        'css3新特性'
       ],
       '/vueSource/': [
         ['01.文件结构', '文件结构'],
