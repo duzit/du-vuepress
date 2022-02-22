@@ -1,14 +1,26 @@
 
-### null 和 undefined 的区别
-* typeof(null) typeof(undefined)
-```js 
-typeof(null) // 'object'
-typeof(undefined) // 'undefined'
+# null 和 undefined 的区别
+
+## 相同点 
+
+- 假值 真假值判断中均可使用 
+
+```js
+const a = null
+const b = undefined
+
+if (a) // dosth
+if (b) // dosth
 ```
-#### undefined 
-1. 定义了但未赋值
-2. 函数未传参
-3. 函数默认返回值
+
+## 不同点 
+
+### 概念不同
+
+- `null` 参考 Java 定义，表示没有对象，此处不应该有值，原型链的终点
+
+- `undefined` 基本数据类型，表示定义了未赋值，函数未传参的默认值，函数返回的默认值等
+
 ```js 
 let num;
 console.log(num); // undefined
@@ -22,6 +34,24 @@ function name1(params) {
   return
 }
 name1() // undefined
+```
+
+### 类型不同 
+
+- `typeof(null) typeof(undefined)`
+
+```js 
+typeof(null) // 'object'
+typeof(undefined) // 'undefined'
+```
+
+### 值不同 
+
+- Number(null) Number(undefined)
+
+```js
+Number(null) // 0
+Number(undefined) // NaN
 ```
 
 #### undeclared 

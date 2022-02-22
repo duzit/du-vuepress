@@ -128,7 +128,8 @@ module.exports = {
         ['CommonJS-ESModule', 'CommonJs和ES Module的区别'],
         '几种继承的方法',
         'Map和Object区别',
-        'Promise'
+        'Promise',
+        'defer.async'
       ],
       '/interview/vue/': [
         '单向数据流',
@@ -188,7 +189,8 @@ module.exports = {
         'float',
         'selector',
         'BFC',
-        'css3新特性'
+        'css3新特性',
+        '两列布局的几种方法'
       ],
       '/vueSource/': [
         ['01.文件结构', '文件结构'],
