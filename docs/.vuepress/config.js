@@ -129,7 +129,8 @@ module.exports = {
         '几种继承的方法',
         'Map和Object区别',
         'Promise',
-        'defer.async'
+        'defer.async',
+        'new操作符干了什么'
       ],
       '/interview/vue/': [
         '单向数据流',
