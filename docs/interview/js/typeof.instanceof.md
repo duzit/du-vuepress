@@ -1,8 +1,10 @@
-### typeof instanceof
-[参考链接1](https://mp.weixin.qq.com/s/6SIgXfAA8J98oQi1qEnXnA)
-[参考链接2](https://juejin.im/post/5b0b9b9051882515773ae714)
+# typeof instanceof
 
-### typeof
+- [参考链接1](https://mp.weixin.qq.com/s/6SIgXfAA8J98oQi1qEnXnA)
+- [参考链接2](https://juejin.im/post/5b0b9b9051882515773ae714)
+
+## typeof
+
 * 基础数据类型除 null 外，返回对应的类型  
   引用数据类型 除 function 外，返回 object
 ```js
@@ -17,8 +19,10 @@ console.log(typeof Symbol()); // symbol
 console.log(typeof true); // boolean
 ```
 
-### instanceof
+## instanceof
+
 * 通过原型链判断的，A instanceof B, 在A的原型链中层层查找，是否有原型等于B.prototype 
+
 ```js
 function new_instance_of(leftVaule, rightVaule) { 
     let rightProto = rightVaule.prototype; // 取右表达式的 prototype 值
@@ -34,7 +38,9 @@ function new_instance_of(leftVaule, rightVaule) {
     }
 }
 ```
+
 * 实现原理 只要右边变量的 prototype 在左边变量的原型链上即可。
+
 ```js
 function foo() {
 
@@ -49,13 +55,17 @@ foo instanceof Function // true
 * object instanceof constructor   
   object 为实例对象 constructor 为构造函数
 
-### 区别
-1. typeof 返回变量的基本类型，instanceof 返回boolean
+## 区别
+
+1. typeof 返回变量的基本类型，instanceof 返回 boolean
+
 2. instanceof 可以准确的判断复杂引用数据类型 不能判断基本数据类型
 
 
-### PS
+## 通用检测数据类型
+
 * 通用检测数据类型 Object.prototype.toString.call()
+
 ```js
 Object.prototype.toString({})       // "[object Object]"
 Object.prototype.toString.call({})  // 同上结果，加上call也ok

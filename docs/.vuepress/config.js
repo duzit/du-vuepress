@@ -130,7 +130,8 @@ module.exports = {
         'Map和Object区别',
         'Promise',
         'defer.async',
-        'new操作符干了什么'
+        'new操作符干了什么',
+        'slice'
       ],
       '/interview/vue/': [
         '单向数据流',
@@ -156,7 +157,8 @@ module.exports = {
         'Vue响应式原理',
         'Vue性能优化及原理',
         'Vue异步更新机制',
-
+        'data是函数',
+        'VueRouter路由模式和实现原理',
       ],
       '/interview/webpack/': [
         '对webpack的理解',
