@@ -1,4 +1,4 @@
 git add .
-git commit -m 'update interview 面经整理'
+git commit -m 'update interview js'
 git pull 
 git push 

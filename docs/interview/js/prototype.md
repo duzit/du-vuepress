@@ -1,6 +1,27 @@
 # 原型(链)
 
-- [参考](https://juejin.im/post/5c72a1766fb9a049ea3993e6)
+- [参考1](https://juejin.im/post/5c72a1766fb9a049ea3993e6)
+
+- [参考2](https://juejin.cn/post/6844903475021627400)
+
+## 构造函数 原型对象 实例 之间的关系 
+
+![prototype2](../assets/prototype2.png)
+
+## JS对象规则 原型链
+
+- 如果试图引用对象（实例instance）的某个属性，首先会在对象内部寻找该属性，找不到才会到对象的原型（instance.prototype）上寻找，依次类推，这种搜索的轨迹，形似一条长链，又因为 原型（prototype）在这个规则中充当链接的作用，
+于是把这种原型与原型的链条称为`原型链`
+
+## 原型链的问题
+
+- 当原型链中包含引用类型值的原型时，该引用类型的值会被所有实例共享
+
+- 在创建子类型（Son）时 不能向超类型（Father）的构造函数传递参数
+
+## 解决原型链的问题 
+
+- [继承方法](./几种继承的方法.md)
 
 ## 实例 
 
@@ -125,3 +146,4 @@ Object.prototype.__proto__ === null;
   属性或到达原型链的末尾。
 
 ![prototype](../assets/prototype.png)
+
