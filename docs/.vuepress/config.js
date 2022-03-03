@@ -131,7 +131,8 @@ module.exports = {
         'Promise',
         'defer.async',
         'new操作符干了什么',
-        'slice'
+        'slice',
+        'async.await',
       ],
       '/interview/vue/': [
         '单向数据流',

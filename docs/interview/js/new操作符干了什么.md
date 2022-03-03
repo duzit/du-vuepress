@@ -2,9 +2,9 @@
 
 1. 创建一个空对象
 
-2. 继承构造函数的原型  Foo.prototype 
+2. 继承构造函数的原型 通过指针 `obj.__proto__ = Foo.prototype` 
 
-3. 改变 this 指向 属性和方法 都被加入到 this 引用的对象中 
+3. 改变 this 指向 属性和方法 都被加入到 this 引用的对象中 `Foo.call(obj)`
 
 4. 如果源构造函数有返回值，则处理返回值  
 

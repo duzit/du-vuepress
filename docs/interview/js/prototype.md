@@ -13,6 +13,10 @@
 - 如果试图引用对象（实例instance）的某个属性，首先会在对象内部寻找该属性，找不到才会到对象的原型（instance.prototype）上寻找，依次类推，这种搜索的轨迹，形似一条长链，又因为 原型（prototype）在这个规则中充当链接的作用，
 于是把这种原型与原型的链条称为`原型链`
 
+- 使用了原型链后, 当查找一个对象的属性时，JavaScript 会向上遍历原型链，直到找到给定名称的属性为止，到查找到达原型链的顶部，也就是 Object.prototype， 但是仍然没有找到指定的属性，就会返回 undefined. 此时若想避免原型链查找, 建议使用 **hasOwnProperty** 方法. 因为 **hasOwnProperty** 是 JavaScript 中唯一一个处理属性但是不查找原型链的函数. 如:  
+
+`console.log(instance1.hasOwnProperty('age'));//true`  
+
 ## 原型链的问题
 
 - 当原型链中包含引用类型值的原型时，该引用类型的值会被所有实例共享

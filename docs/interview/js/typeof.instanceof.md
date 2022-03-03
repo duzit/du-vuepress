@@ -1,12 +1,14 @@
 # typeof instanceof
 
 - [参考链接1](https://mp.weixin.qq.com/s/6SIgXfAA8J98oQi1qEnXnA)
+
 - [参考链接2](https://juejin.im/post/5b0b9b9051882515773ae714)
 
 ## typeof
 
-* 基础数据类型除 null 外，返回对应的类型  
-  引用数据类型 除 function 外，返回 object
+- 基础数据类型除 `null` 外，返回对应的类型
+- 引用数据类型 除 `function` 外，返回 `object`
+
 ```js
 console.log(typeof 1); // number
 console.log(typeof '1'); // string
@@ -21,7 +23,7 @@ console.log(typeof true); // boolean
 
 ## instanceof
 
-* 通过原型链判断的，A instanceof B, 在A的原型链中层层查找，是否有原型等于B.prototype 
+* 通过原型链判断的，A instanceof B, 在A的原型链中层层查找，是否有原型等于 `B.prototype `
 
 ```js
 function new_instance_of(leftVaule, rightVaule) { 
