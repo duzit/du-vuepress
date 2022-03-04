@@ -181,7 +181,8 @@ module.exports = {
         ['urlEnter', '输入 URL 敲下回车后发生了什么'],
         'dns',
         'CDN',
-        ['GetPost', 'Get Vs Post']
+        'GetPost',
+        'http.code',
       ],
       '/interview/css/': [
         'transition',
