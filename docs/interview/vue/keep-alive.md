@@ -1,17 +1,27 @@
 # keep-alive
 
-* https://mp.weixin.qq.com/s/LGKVWXxm4ICI4FTbIK5dOQ
+* [keep-alive的理解](https://mp.weixin.qq.com/s/LGKVWXxm4ICI4FTbIK5dOQ)
+
+## 概念
 
 * 会缓存不活动的组件实例，而不是销毁它们，主要用于保留组件状态或避免重新渲染
+
 * 它自身不会渲染一个 DOM 元素，也不会出现在组件的父组件链中
+
 * keep-alive 是用在其一个直属的子组件被开关的情形。如果你在其中有 v-for 则不会工作
+
 * 如果有上述的多个条件性的子元素，keep-alive 要求同时只有一个子元素被渲染
+
 * include 和 exclude 属性允许组件有条件地缓存。二者都可以用逗号分隔字符串、正则表达式或一个数组来表示
-* 匹配首先检查组件自身的 name 选项，如果 name 选项不可用，  
+
+* 匹配首先检查组件自身的 name 选项，如果 name 选项不可用，
   则匹配它的局部注册名称 (父组件 components 选项的键值)。匿名组件不能被匹配
-* max 最多可以缓存多少组件实例。一旦这个数字达到了，在新实例被创建之前，  
+
+* max 最多可以缓存多少组件实例。一旦这个数字达到了，在新实例被创建之前，
   已缓存组件中最久没有被访问的实例会被销毁掉。
-* 设置 keep-alive 的组件会多出两个生命周期钩子，activated 和 deactivated 
+
+* 设置 keep-alive 的组件会多出两个生命周期钩子，activated 和 deactivated，再次
+  进入 keep-alive 组件，生命周期 beforeCreate created beforeMount mounted 不会执行
 
 ## 缓存后如何获取数据
 
