@@ -80,10 +80,10 @@ Module {
 
 ### 加载过程 
   1. 查找，下载，解析，构建所有模块实例  
-  - ES6模块会在程序开始前先根据模块关系查找所有的模块，生成一个无环关系图，并将所有的模块实例  
+  - ES6模块会在程序开始前先根据模块关系查找所有的模块，生成一个无环关系图，并将所有的模块实例
     都创建好，这样避免了循环引用的问题，当然也有模块加载缓存，重复 import 同一个模块，只会执行一次代码。
   
-  2. 在内存中腾出空间给即将 export 的内容（此时尚未写入 export value），然后使 import 和 export 指向  
+  2. 在内存中腾出空间给即将 export 的内容（此时尚未写入 export value），然后使 import 和 export 指向
   内存中的这些空间，这个过程也叫连接。
   - 这一步完成工作的是 living binding import export  
 
@@ -91,7 +91,7 @@ Module {
 
 
 ## 差异点
-1. CommonJs 可以在运行时使用变量进行 require ，如 `require(path.join('xxx', 'xxx.js'))`  
+1. CommonJs 可以在运行时使用变量进行 require ，如 `require(path.join('xxx', 'xxx.js'))` 
   而静态 import 语法（还有动态 import ，返回 Promise）不行，因为 ES6 模块会先解析所有模块再执行代码。  
 
 2. require 引入的是完整的 exports 对象，import 可以只 import 部分需要的内容。

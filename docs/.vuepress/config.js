@@ -133,6 +133,7 @@ module.exports = {
         'new操作符干了什么',
         'slice',
         'async.await',
+        '浏览器的垃圾回收',
       ],
       '/interview/vue/': [
         '单向数据流',

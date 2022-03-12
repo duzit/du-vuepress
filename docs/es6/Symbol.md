@@ -34,7 +34,7 @@ const s3 = Symbol()
 console.log(s2 === s3); // false
 ```
 
-- Symbol 值不能与其他类型的值进行运算，否则会报错。但是可以显式转为字符串。  
+- Symbol 值不能与其他类型的值进行运算，否则会报错。但是可以显式转为字符串。
   Symbol 值可以转为 Boolean 值，但不能转为数值
 ```js
 const s4 = Symbol('hello')
