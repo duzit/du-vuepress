@@ -85,16 +85,14 @@ module.exports = {
     ],
     sidebar: {
       '/note/js/': [
-        ['imgSrc', 'img动态src问题'],
-        ['node-sass安装', 'node-sass安装问题'],
-        ['window.open', '打开新窗口 监听其关闭 然后刷新当前页面'],
+        'imgSrc',
+        'node-sass安装',
+        'window.open',
         'Promise链式调用',
-        ['JSON.stringify', 'JSON.stringify()'],
-        ['CommonJS.ESM', 'CommonJS Vs ES Module'],
-        ['Object', 'Object属性']
-      ],
-      '/note/js/': [
-
+        'JSON.stringify',
+        'CommonJS.ESM',
+        'Object',
+        'Object.freeze',
       ],
       '/note/echarts/': [
         ['summary', '常见配置总结'],
@@ -209,6 +207,7 @@ module.exports = {
         ['08.createElement', 'createElement'],
         ['09.update', 'update'],
         ['10.响应式对象', '响应式对象'],
+        '11.utils',
       ],
       '/note/vue/': [
         ['选项.DOM', '选项/DOM'],

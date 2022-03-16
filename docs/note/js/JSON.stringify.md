@@ -18,6 +18,8 @@
 
 ## 基本使用
 
+### 对象
+
 ```js
 const obj1 = {
   name: 'Ben',
@@ -48,13 +50,35 @@ console.log(JSON.stringify(obj1, null, 2));
 // }
 ```
 
+### 数组
+
+```js
+const arr = [
+  {
+    name: 'zs',
+    age: 12
+  },
+  {
+    name: 'xm',
+    age: 13
+  },
+  {
+    name: 'xw',
+    age: 14
+  },
+]
+
+const a1 = JSON.stringify(arr, ['name']) 
+console.log(a1); // [{"name":"zs"},{"name":"xm"},{"name":"xw"}]
+```
+
 ## 特性
 
 ### 一
 
 - `undefined` `任意的函数` `Symbol` 值出现在 `非数组对象` 的属性值中将会被忽略 
 
-- `undefined` `任意的函数` `Symbol` 值出现在 `非数组对象` 的属性值中将会被忽略 
+- `undefined` `任意的函数` `Symbol` 值出现在 `数组对象` 的属性值中将会被转为 `null`
 
 - `undefined` `任意的函数` `Symbol` 被单独转换时，会返回 undefined
 
