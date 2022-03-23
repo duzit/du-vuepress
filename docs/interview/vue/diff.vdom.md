@@ -15,10 +15,13 @@
 * 循环从两边向中间靠拢
 
 ## VDOM 
-* https://mp.weixin.qq.com/s/lAscEOQWkk-IQq6lWCdSSw
+
+* [参考](https://mp.weixin.qq.com/s/lAscEOQWkk-IQq6lWCdSSw)
+
 * 对真实DOM的抽象，以js对象（VNode）作为基础的树，用对象的属性来描述节点，  
   最终通过一系列操作使这棵树映射到真实的环境上。
 ## 为什么需要虚拟DOM
+
 * 操作真实DOM的很慢，设计庞大的元素，容易引起性能问题，频繁操作甚至会导致页面卡顿，影响用户体验。
 * 比如一次更新10个DOM节点，真实DOM收到第一个更新DOM请求后会立即执行流程，最终执行10个流程。  
   而虚拟DOM不会立即执行，而是通过VNode将这10次更新的diff内容保存到本地的js对象中，最终将这个js对象  

@@ -73,12 +73,37 @@ module.exports = {
             link: '/source/axios/'
           },
           {
-            text: 'vuerouter',
+            text: 'Vue Router',
             link: '/source/vuerouter/'
           },
           {
-            text: 'vuex',
+            text: 'Vuex',
             link: '/source/vuex/'
+          }
+        ]
+      },
+      {
+        text: '基建',
+        items: [
+          {
+            text: 'Git',
+            link: '/infrastructure/git/'
+          },
+          {
+            text: 'Babel',
+            link: '/infrastructure/babel/'
+          },
+          {
+            text: 'NPM',
+            link: '/infrastructure/npm/'
+          },
+          {
+            text: '前端框架',
+            link: '/infrastructure/framework/'
+          },
+          {
+            text: '单元测试',
+            link: '/infrastructure/unitTest/'
           }
         ]
       }
