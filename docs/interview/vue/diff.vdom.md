@@ -1,6 +1,10 @@
-# diff 
+# Diff VDOM
 
 - [链接](https://segmentfault.com/a/1190000008782928)
+
+- [虚拟DOM](https://mp.weixin.qq.com/s/itM1ldWdUHHqdHuv6q_vdw)
+
+![vdom1](../assets/dom1.jpeg)
 
 * 设置key和不设置key的区别  
   不设key，newCh和oldCh只会进行头尾两端的相互比较，设key后，除了头尾两端的比较外，  
@@ -11,6 +15,7 @@
   且维护性不高。
 
 ## 比较方式
+
 * 同级比较
 * 循环从两边向中间靠拢
 

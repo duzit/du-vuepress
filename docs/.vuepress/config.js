@@ -27,6 +27,10 @@ module.exports = {
             link: '/note/vue/'
           },
           {
+            text: 'React',
+            link: '/note/React/'
+          },
+          {
             text: 'Echarts',
             link: '/note/echarts/'
           }
@@ -79,6 +83,10 @@ module.exports = {
           {
             text: 'Vuex',
             link: '/source/vuex/'
+          },
+          {
+            text: '源码共读',
+            link: '/source/ruochuan/'
           }
         ]
       },
@@ -265,6 +273,10 @@ module.exports = {
       ],
       '/source/vuex/': [
         'Vuex'
+      ],
+      '/source/ruochuan/': [
+        'env',
+        'utils'
       ],
       '/': [
         '',        /* / */
