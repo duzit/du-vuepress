@@ -33,6 +33,10 @@ module.exports = {
           {
             text: 'Echarts',
             link: '/note/echarts/'
+          },
+          {
+            text: 'CSS',
+            link: '/note/css/'
           }
         ]
       },
@@ -277,6 +281,10 @@ module.exports = {
       '/source/ruochuan/': [
         'env',
         'utils'
+      ],
+      '/note/css/': [
+        'ele.scrollHeight',
+        'elementUI.Collapse',
       ],
       '/': [
         '',        /* / */
