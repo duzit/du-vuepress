@@ -7,3 +7,5 @@
 - [深入浅出webpack](https://webpack.wuhaolin.cn/) 
 
 - [webpack核心原理](https://mp.weixin.qq.com/s/SbJNbSVzSPSKBe2YStn2Zw)
+
+- [Webapck5 核心打包原理全流程解析](https://mp.weixin.qq.com/s/DXjxZwhEJM8Hm8FtESxDEA)

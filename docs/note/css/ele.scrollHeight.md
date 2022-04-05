@@ -83,6 +83,12 @@
 此属性会将获取的值四舍五入取整数。 如果你需要小数结果, 请使用 element.getBoundingClientRect().
 :::
 
+## 对比 offsetHeight
+
+- 只读属性
+
+- 高度包含 padding 和 border ，且是整数
+
 ## scrollTop
 
 - [MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/scrollTop)

@@ -280,7 +280,8 @@ module.exports = {
       ],
       '/source/ruochuan/': [
         'env',
-        'utils'
+        'utils',
+        'elmentUI.message'
       ],
       '/note/css/': [
         'ele.scrollHeight',
