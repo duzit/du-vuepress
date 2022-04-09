@@ -200,3 +200,13 @@ var hyphenate = cached(function (str) {
 
 console.log(hyphenate('onClick')); // on-click
 ```
+
+## 收获
+
+- `Object.freeze()`
+
+- `isPrimitive` 原始值类型
+
+- `Object.prototype.hasOwnProperty` 不查找原型链
+
+- `isPromise` `async function` 返回 `Promise`
