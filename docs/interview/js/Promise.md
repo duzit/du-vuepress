@@ -68,11 +68,16 @@ done() {
 ```
 
 - `all` 
-> 接受一个Promise数组，并发执行参数中的Promise，返回一个新Promise  
+> 接受一个Promise数组，`并发执行`参数中的Promise，返回一个新Promise  
   所有状态为 resolved 时，返回一个 resolved 的Promise，有一个状态为 rejected，则全部为 rejected 
 
 - `race`
-> 接受一个Promise 数组，顺序执行参数中的Promise，有一个状态为 resolved 则返回该 Promise
+> 接受一个Promise 数组，`顺序执行`参数中的Promise，有一个状态为 resolved 则返回该 Promise
+
+- `allSettled` 
+> 接收一个 Promise 数组，返回给定 promise 都已经 `fullfilled` 或 `rejected` 后的 promise，并带有一个对象数组，
+每个对象表示对应的 promise 结果
+
 
 ## Promise 存在哪些缺点
 

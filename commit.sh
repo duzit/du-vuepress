@@ -1,4 +1,4 @@
 git add .
-git commit -m 'update souce ruochuan'
+git commit -m 'update note'
 git pull 
 git push 
