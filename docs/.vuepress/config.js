@@ -288,6 +288,9 @@ module.exports = {
         'ele.scrollHeight',
         'elementUI.Collapse',
       ],
+      '/note/React/': [
+        'devTips',
+      ],
       '/': [
         '',        /* / */
       ]
