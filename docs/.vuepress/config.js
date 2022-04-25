@@ -287,6 +287,8 @@ module.exports = {
       '/note/css/': [
         'ele.scrollHeight',
         'elementUI.Collapse',
+        'flex',
+        'clamp'
       ],
       '/note/React/': [
         'devTips',
