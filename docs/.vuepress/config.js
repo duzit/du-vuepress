@@ -288,7 +288,8 @@ module.exports = {
         'ele.scrollHeight',
         'elementUI.Collapse',
         'flex',
-        'clamp'
+        'clamp',
+        '文本溢出效果'
       ],
       '/note/React/': [
         'devTips',
