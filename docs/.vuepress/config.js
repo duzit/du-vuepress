@@ -289,7 +289,8 @@ module.exports = {
         'elementUI.Collapse',
         'flex',
         'clamp',
-        '文本溢出效果'
+        '文本溢出效果',
+        'animation'
       ],
       '/note/React/': [
         'devTips',
