@@ -1,4 +1,4 @@
 git add .
-git commit -m 'update note css animation'
+git commit -m 'update note css textoverflow'
 git pull 
 git push 
