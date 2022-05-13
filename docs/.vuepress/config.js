@@ -296,6 +296,9 @@ module.exports = {
         'devTips',
         'codemirror',
       ],
+      '/note/ts/': [
+        '01.what-is-ts',
+      ],
       '/': [
         '',        /* / */
       ]

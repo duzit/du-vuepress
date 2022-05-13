@@ -11,3 +11,6 @@
 - [初学者指南](https://mp.weixin.qq.com/s/_ShxBnF-HdLR_tK8qip7wA)
 
 - [一篇完全够用的 TS 指南](https://juejin.cn/post/7088304364078497800)
+
+- [TypeScript 入门教程](https://ts.xcatliu.com/)
+
