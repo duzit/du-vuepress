@@ -290,7 +290,9 @@ module.exports = {
         'flex',
         'clamp',
         'textoverflow',
-        'animation'
+        'animation',
+        'cw-border',
+        'background',
       ],
       '/note/React/': [
         'devTips',

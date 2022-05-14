@@ -1,4 +1,4 @@
 git add .
-git commit -m 'add note ts'
+git commit -m 'add note css background border'
 git pull 
 git push 
