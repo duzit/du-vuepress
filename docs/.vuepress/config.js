@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'adair',
+  title: 'Adair',
   description: '记录文档',
   markdown: {
     // extractHeaders: [ 'h3' ],
@@ -300,6 +300,7 @@ module.exports = {
       ],
       '/note/ts/': [
         '01.what-is-ts',
+        '02.Primitive-data-types',
       ],
       '/': [
         '',        /* / */

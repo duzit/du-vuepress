@@ -2,6 +2,8 @@
 
 - [源码参考](https://github.com/duzit/du-css/blob/master/src/propertys/background.html)
 
+- [codepen](https://codepen.io/duzit/pen/qBxqPaN)
+
 - background-color 
 - background-clip 
 - background-image 
