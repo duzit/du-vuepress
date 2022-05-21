@@ -293,6 +293,7 @@ module.exports = {
         'animation',
         'cw-border',
         'background',
+        'cw-line-height',
       ],
       '/note/React/': [
         'devTips',
