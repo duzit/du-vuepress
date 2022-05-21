@@ -291,9 +291,10 @@ module.exports = {
         'clamp',
         'textoverflow',
         'animation',
-        'cw-border',
         'background',
+        'cw-border',
         'cw-line-height',
+        'cw-vertical-align',
       ],
       '/note/React/': [
         'devTips',
