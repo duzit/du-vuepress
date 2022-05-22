@@ -1,4 +1,4 @@
 git add .
-git commit -m 'add note css vertical-align'
+git commit -m 'add ruochuan open'
 git pull 
 git push 

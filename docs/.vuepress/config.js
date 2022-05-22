@@ -282,7 +282,8 @@ module.exports = {
         'env',
         'utils',
         'elmentUI.message',
-        'await-to-js'
+        'await-to-js',
+        'open'
       ],
       '/note/css/': [
         'ele.scrollHeight',
