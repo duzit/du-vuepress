@@ -301,6 +301,7 @@ module.exports = {
       '/note/ts/': [
         '01.what-is-ts',
         '02.Primitive-data-types',
+        '03.union-types',
       ],
       '/': [
         '',        /* / */
