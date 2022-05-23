@@ -282,7 +282,8 @@ module.exports = {
         'env',
         'utils',
         'elmentUI.message',
-        'await-to-js'
+        'await-to-js',
+        'open'
       ],
       '/note/css/': [
         'ele.scrollHeight',
@@ -291,8 +292,10 @@ module.exports = {
         'clamp',
         'textoverflow',
         'animation',
-        'cw-border',
         'background',
+        'cw-border',
+        'cw-line-height',
+        'cw-vertical-align',
       ],
       '/note/React/': [
         'devTips',
