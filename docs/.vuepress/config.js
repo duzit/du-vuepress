@@ -293,9 +293,12 @@ module.exports = {
         'textoverflow',
         'animation',
         'background',
+        'ghost-blank-node',
         'cw-border',
         'cw-line-height',
         'cw-vertical-align',
+        'cw-float',
+        'cw-overflow',
       ],
       '/note/React/': [
         'devTips',
