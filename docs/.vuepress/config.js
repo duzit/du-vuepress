@@ -303,6 +303,8 @@ module.exports = {
       '/note/React/': [
         'devTips',
         'codemirror',
+        'useEffect',
+        'hook-rule.md',
       ],
       '/note/ts/': [
         '01.what-is-ts',
