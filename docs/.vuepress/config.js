@@ -299,6 +299,7 @@ module.exports = {
         'cw-vertical-align',
         'cw-float',
         'cw-overflow',
+        'cw-position',
       ],
       '/note/React/': [
         'devTips',
