@@ -305,7 +305,8 @@ module.exports = {
         'devTips',
         'codemirror',
         'useEffect',
-        'hook-rule.md',
+        'hook-rule',
+        'react-hello-world',
       ],
       '/note/ts/': [
         '01.what-is-ts',
