@@ -283,7 +283,8 @@ module.exports = {
         'utils',
         'elmentUI.message',
         'await-to-js',
-        'open'
+        'open',
+        'arrify',
       ],
       '/note/css/': [
         'ele.scrollHeight',

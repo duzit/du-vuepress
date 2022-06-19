@@ -1,4 +1,4 @@
 git add .
-git commit -m 'add note react hello world'
+git commit -m 'add note ruochuan arrify'
 git pull 
 git push 
