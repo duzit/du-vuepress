@@ -285,6 +285,7 @@ module.exports = {
         'await-to-js',
         'open',
         'arrify',
+        'classnames',
       ],
       '/note/css/': [
         'ele.scrollHeight',

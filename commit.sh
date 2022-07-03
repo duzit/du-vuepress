@@ -1,4 +1,4 @@
 git add .
-git commit -m 'add note react hook'
+git commit -m 'add note classnames'
 git pull 
 git push 
