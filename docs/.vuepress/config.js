@@ -309,7 +309,9 @@ module.exports = {
         'useEffect',
         'hook-rule',
         'react-hello-world',
-        'react-hooks'
+        'react-hooks',
+        'refs',
+        'HOC',
       ],
       '/note/ts/': [
         '01.what-is-ts',
