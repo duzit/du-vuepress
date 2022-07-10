@@ -315,6 +315,9 @@ module.exports = {
         '01.what-is-ts',
         '02.Primitive-data-types',
         '03.union-types',
+        '04.interfaces',
+        '05.Array',
+        '06.Function'
       ],
       '/': [
         '',        /* / */
