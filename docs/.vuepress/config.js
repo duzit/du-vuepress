@@ -312,6 +312,7 @@ module.exports = {
         'react-hooks',
         'refs',
         'HOC',
+        'JSX',
       ],
       '/note/ts/': [
         '01.what-is-ts',
