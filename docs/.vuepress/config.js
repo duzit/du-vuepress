@@ -320,7 +320,8 @@ module.exports = {
         '03.union-types',
         '04.interfaces',
         '05.Array',
-        '06.Function'
+        '06.Function',
+        '07.class',
       ],
       '/': [
         '',        /* / */
