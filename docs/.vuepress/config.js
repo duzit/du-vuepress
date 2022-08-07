@@ -322,6 +322,7 @@ module.exports = {
         '05.Array',
         '06.Function',
         '07.class',
+        '08.泛型.md',
       ],
       '/': [
         '',        /* / */
