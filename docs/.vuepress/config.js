@@ -286,6 +286,7 @@ module.exports = {
         'open',
         'arrify',
         'classnames',
+        '01.antfu-install-pkg',
       ],
       '/note/css/': [
         'ele.scrollHeight',
