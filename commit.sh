@@ -1,4 +1,4 @@
 git add .
-git commit -m 'add source ruochuan'
+git commit -m 'update: note react'
 git pull 
 git push 

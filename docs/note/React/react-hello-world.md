@@ -156,3 +156,34 @@ export default Combine;
 
 - 对子节点进行递归
   - key 属性使转换高效
+
+## Context
+
+- 无需在每层组件添加props，就能在组件树中传递数据
+
+- 设计目的是共享对于组件树而言是全局的数据
+
+### API
+
+- `React.createContext()`
+
+```js
+const Context = React.createContext(defaultValue);
+```
+
+> 订阅 context 的组件，会从离自身最近的匹配的 `Provider` 中读取当前的context值
+
+> 只有当组件所处的树中没有匹配到 Provider 时，其 defaultValue 参数才会生效 
+
+> 将 undefined 传递给 Provider 的 value 时，消费组件的 defaultValue 不会生效 
+
+- `Context.Provider`
+  - 允许消费组件订阅context变化
+  - 当 Provider 的 value 发生变化时，内部的消费组件都会重新渲染
+
+```js
+<Context.Provider value={/* 值 */}>
+  /* 消费组件 */
+  <Consumer />
+</Context.Provider>
+```
