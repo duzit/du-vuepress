@@ -314,6 +314,7 @@ module.exports = {
         'refs',
         'HOC',
         'JSX',
+        'API',
       ],
       '/note/ts/': [
         '01.what-is-ts',

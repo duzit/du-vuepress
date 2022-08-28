@@ -187,3 +187,29 @@ const Context = React.createContext(defaultValue);
   <Consumer />
 </Context.Provider>
 ```
+
+- `Class.contextType`
+
+  - 可以使用 `this.context` 获取最近的 `Context` 的值，在任意生命周期中，包括 render
+
+```js
+class MyCalss extends React.component {
+  componentDidMount() {
+    let value = this.context;
+    /* 在组件挂载完成后，使用 MyContext 组件的值来执行一些有副作用的操作 */
+  }
+  componentDidUpdate() {
+    let value = this.context;
+    /* ... */
+  }
+  componentWillUnmount() {
+    let value = this.context;
+    /* ... */
+  }
+  render() {
+    let value = this.context;
+    /* 基于 MyContext 组件的值进行渲染 */
+  }
+}
+MyClass.contextType = MyContext;
+```
